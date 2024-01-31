@@ -19,9 +19,32 @@ export class GraphController {
     console.error('Error fetching data:', error.message);
     } else {
     // console.log('Fetched data:', data);
-    const filteredData = data.filter(entry => entry.id % 1000 === 0);
+    // const filteredData = data.filter(entry => entry.id % 1000 === 0);
+    let filteredProfitPercentage =[];
+    let filteredTimestamps=[];
+    let j=0;
+    let sum =0;
+    let amt =0;
+    for(let i=1;i<data.length;i++){
+        sum+=data[i]["Profit Percentage"];
+        amt++;
+        if(i%250==0 && i%500!=0){
+          filteredProfitPercentage[j]=sum/amt;
+          filteredTimestamps[j]=data[i-250]["Timestamp"];
+          amt=0;
+          sum =0;
+          j++;
+        }
+        else if(i==data.length-1){
+          filteredProfitPercentage[j]=sum/amt;
+          
+          filteredTimestamps[j]=data[i]["Timestamp"];
+        }
+        
+        
+    }
 
-    return filteredData;
+    return {filteredProfitPercentage ,filteredTimestamps};
     }
 
   }

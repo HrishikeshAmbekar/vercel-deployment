@@ -19,7 +19,7 @@ async function bootstrap() {
 
   // Enable CORS
   const corsOptions: CorsOptions = {
-    origin: 'https://vercel-deployment-client-mocha.vercel.app', // Replace with your client's URL
+    origin: ['https://vercel-deployment-client-mocha.vercel.app','http://localhost:1234'], // Replace with your client's URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   };

@@ -51,16 +51,23 @@ export const Dashboard = (): JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://vercel-deployment-server-blush.vercel.app/graph');
+        // const response = await fetch('https://vercel-deployment-server-blush.vercel.app/graph');
+        const response = await fetch('http://localhost:3000/graph');
+
         // const { timestamps, profit_percentages, downsampledData } = await response.json();
         const d = await response.json();
-        
-        const timestamps = d.map(entry => entry.Timestamp);
+        // console.log(d);
+        // const timestamps = d.map(entry => entry.Timestamp);
+
         // console.log(typeof timestamps[0])
 
-        const timestamps2 = d.map(entry => entry.Timestamp.substring(0,10));
+        // const timestamps2 = d.map(entry => entry.Timestamp.substring(0,10));
 
-        const profit_percentages = d.map(entry => entry['Profit Percentage']);
+        // const profit_percentages = d.map(entry => entry['Profit Percentage']);
+        const timestamps = d["filteredTimestamps"];
+        const profit_percentages =d["filteredProfitPercentage"];
+        const timestamps2 = timestamps.map(entry => entry.substring(0,10));
+
         // console.log(id);
         // console.log(timestamps);
         // console.log(profit_percentages);
