@@ -1,0 +1,1 @@
+export { IconFromTablerIo } from "./IconFromTablerIo";

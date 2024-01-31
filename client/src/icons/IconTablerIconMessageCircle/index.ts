@@ -1,0 +1,1 @@
+export { IconTablerIconMessageCircle } from "./IconTablerIconMessageCircle";

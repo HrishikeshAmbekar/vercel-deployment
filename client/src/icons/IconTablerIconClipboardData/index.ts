@@ -1,0 +1,1 @@
+export { IconTablerIconClipboardData } from "./IconTablerIconClipboardData";

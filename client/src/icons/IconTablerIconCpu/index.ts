@@ -1,0 +1,1 @@
+export { IconTablerIconCpu } from "./IconTablerIconCpu";

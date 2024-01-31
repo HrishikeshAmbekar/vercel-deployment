@@ -1,0 +1,1 @@
+export { IconTablerIconLayoutCollage } from "./IconTablerIconLayoutCollage";

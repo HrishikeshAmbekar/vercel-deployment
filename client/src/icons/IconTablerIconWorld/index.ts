@@ -1,0 +1,1 @@
+export { IconTablerIconWorld } from "./IconTablerIconWorld";

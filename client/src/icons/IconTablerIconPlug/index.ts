@@ -1,0 +1,1 @@
+export { IconTablerIconPlug } from "./IconTablerIconPlug";

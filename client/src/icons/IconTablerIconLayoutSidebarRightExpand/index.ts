@@ -1,0 +1,1 @@
+export { IconTablerIconLayoutSidebarRightExpand } from "./IconTablerIconLayoutSidebarRightExpand";

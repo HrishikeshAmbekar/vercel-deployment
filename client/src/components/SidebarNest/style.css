@@ -1,0 +1,57 @@
+.sidebar-nest {
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  width: 264px;
+}
+
+.sidebar-nest .sidebar-item-instance {
+  display: flex !important;
+  flex: 1 !important;
+  flex-grow: 1 !important;
+  height: 41px !important;
+}
+
+.sidebar-nest .sidebar-item-opened {
+  color: var(--variable-collection-black) !important;
+}
+
+.sidebar-nest .sidebar-item-opened-2 {
+  align-self: stretch !important;
+  border-radius: 12px 12px 0px 0px !important;
+  display: flex !important;
+  height: 41px !important;
+  padding: 12px 40px 12px 20px !important;
+  width: 100% !important;
+}
+
+.sidebar-nest .icon-from-tabler-io-30 {
+  height: 16px !important;
+  position: relative !important;
+  width: 16px !important;
+}
+
+.sidebar-nest .nest {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--variable-collection-light-orange);
+  border-radius: 0px 0px 12px 12px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+  padding: 0px 0px 12px;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-nest .sidebar-item-2 {
+  align-self: stretch !important;
+  height: 41px !important;
+  padding: 12px 24px 12px 48px !important;
+}
+
+.sidebar-nest.on {
+  flex-direction: column;
+}

@@ -1,0 +1,51 @@
+.logo {
+  align-items: center;
+  display: inline-flex;
+  gap: 6.4px;
+  justify-content: center;
+  position: relative;
+}
+
+.logo .logomark {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 6.97px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo .ellipse {
+  background-color: var(--variable-collection-orange);
+  border-radius: 10.4px/10.5px;
+  height: 20.99px;
+  position: relative;
+  width: 20.8px;
+}
+
+.logo .div {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 7.06px/6.1px;
+  height: 12px;
+  left: -1px;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  transform: rotate(-33.41deg);
+  width: 14px;
+}
+
+.logo .union {
+  height: 7px;
+  left: 13px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.logo .frame {
+  height: 24px;
+  position: relative;
+  width: 121px;
+}

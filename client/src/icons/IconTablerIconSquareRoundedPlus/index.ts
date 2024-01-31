@@ -1,0 +1,1 @@
+export { IconTablerIconSquareRoundedPlus } from "./IconTablerIconSquareRoundedPlus";
