@@ -62,8 +62,8 @@ export const Dashboard = (): JSX.Element => {
 
         const profit_percentages = d.map(entry => entry['Profit Percentage']);
         // console.log(id);
-        console.log(timestamps);
-        console.log(profit_percentages);
+        // console.log(timestamps);
+        // console.log(profit_percentages);
         // Update state to trigger re-render with new data
 
         setDisplay(true);
