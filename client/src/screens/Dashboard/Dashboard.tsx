@@ -51,7 +51,7 @@ export const Dashboard = (): JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/graph');
+        const response = await fetch('https://vercel-deployment-server-blush.vercel.app/graph');
         // const { timestamps, profit_percentages, downsampledData } = await response.json();
         const d = await response.json();
         
